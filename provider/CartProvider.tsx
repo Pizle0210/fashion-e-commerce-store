@@ -13,12 +13,12 @@ export default function CartProvider({
       stripe={process.env.NEXT_PUBLIC_STRIPE_KEY as string}
       billingAddressCollection={false}
       currency="USD"
-      cancelUrl="https://kampala-e-comm.vercel.app/stripe/error"
-      successUrl="https://kampala-e-comm.vercel.app/stripe/success"
+      cancelUrl="kampala-e-commerce.vercel.app/stripe/error"
+      successUrl="kampala-e-commerce.vercel.app/stripe/success"
       shouldPersist={true}
       language="en-US"
     >
       {children}
-    </CProvider>
+    </CProvider> 
   )
 }
