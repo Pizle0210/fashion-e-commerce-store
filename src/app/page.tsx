@@ -4,7 +4,7 @@ import NewArrival from "./components/new-arrival"
 export const dynamic = "force-dynamic"
 export default function Home() {
   return (
-    <main className="bg-white pb-8 sm:pb-10 lg:pb-12 flex min-h-screen flex-col justify-between">
+    <main className="bg-white pb-8 sm:pb-10 lg:pb-12 min-h-screen mb-24">
       <Hero />
       <NewArrival /> 
     </main>

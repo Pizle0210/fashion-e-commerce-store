@@ -27,7 +27,7 @@ export default function RootLayout({
       <body
         suppressHydrationWarning
         className={twMerge(
-          `flex h-screen flex-col justify-between`,
+          `flex min-h-svh flex-col justify-between md:min-h-screen`,
           roboto.className
         )}
       >
@@ -40,7 +40,7 @@ export default function RootLayout({
             <Footer />
           </CartProvider>
         </ReactTostify>
-        <Toaster/>
+        <Toaster />
         {/* </ReactQueryProvider> */}
       </body>
     </html>

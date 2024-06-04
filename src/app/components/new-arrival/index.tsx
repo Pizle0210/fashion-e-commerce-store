@@ -60,7 +60,7 @@ export default async function NewArrival() {
             <div className=" flex justify-between">
               <div className="flex flex-col space-y-0">
                 <p className="ml-3 text-sm font-normal tracking-wide text-black @5xl:text-[1.02rem]">
-                  {product.name}
+                  {product.name.slice(0,10)}...
                 </p>
                 <p className="ml-3 text-sm font-semibold">${product.price}</p>
               </div>

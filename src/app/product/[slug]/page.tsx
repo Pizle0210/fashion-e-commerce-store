@@ -38,7 +38,7 @@ export default async function ProductPage({
 }) {
   const data: fullProductPage = await getData(params.slug)
   return (
-    <div className="bg-white @container">
+    <div className="bg-white @container min-h-dvh md:min-h-screen overflow-y-scroll mb-20 md:mb-0">
       <div className="mx-auto h-screen max-w-screen-xl px-5 md:px-10">
         <div className="grid gap-5 sm:grid-cols-2">
           <ImageGallery images={data.images} />
