@@ -16,6 +16,7 @@ async function getData() {
   const data = await client.fetch(query)
   return data
 }
+export const dynamic = "force-dynamic"
 
 export default async function NewArrival() {
   const data: Product[] = await getData()
@@ -32,7 +33,7 @@ export default async function NewArrival() {
           >
             See All{" "}
             <span className="transform transition duration-75 ease-linear group-hover:translate-x-1">
-              <ArrowRight /> 
+              <ArrowRight />
             </span>
           </Link>
         </div>

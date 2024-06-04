@@ -16,6 +16,9 @@ async function getData() {
   const data = await client.fetch(query)
   return data
 }
+
+export const dynamic = "force-dynamic"
+
 export default async function AllProducts() {
   const data: Product[] = await getData()
 

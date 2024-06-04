@@ -8,6 +8,7 @@ async function getData() {
   const data = await client.fetch(query)
   return data
 }
+export const dynamic = "force-dynamic"
 
 export default async function Hero() {
   const data = await getData()
@@ -64,19 +65,19 @@ export default async function Hero() {
         <div className="flex h-10 w-64 divide-x overflow-hidden rounded border bg-black/80">
           <Link
             href={"/Men"}
-            className="hover:font-light flex w-1/3 place-content-center items-center text-white transition-all duration-200 hover:bg-black/70 active:bg-gray-300"
+            className="flex w-1/3 place-content-center items-center text-white transition-all duration-200 hover:bg-black/70 hover:font-light active:bg-gray-300"
           >
             Men
           </Link>
           <Link
             href={"/Women"}
-            className="hover:font-light flex w-1/3 place-content-center items-center text-white transition-all duration-200 hover:bg-black/70 active:bg-gray-300"
+            className="flex w-1/3 place-content-center items-center text-white transition-all duration-200 hover:bg-black/70 hover:font-light active:bg-gray-300"
           >
             Women
           </Link>
           <Link
             href={"/Kids"}
-            className="hover:font-light flex w-1/3 place-content-center items-center text-white transition-all duration-200 hover:bg-black/70 active:bg-gray-300"
+            className="flex w-1/3 place-content-center items-center text-white transition-all duration-200 hover:bg-black/70 hover:font-light active:bg-gray-300"
           >
             Kids
           </Link>
